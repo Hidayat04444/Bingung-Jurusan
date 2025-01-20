@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bimbingan Jurusan Kuliah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bimbingan Jurusan Kuliah</h1>
+    <p>Isi formulir di bawah ini untuk mengetahui jurusan dan universitas yang sesuai dengan minatmu!</p>
+    <form id="career-form">
+      <div class="form-group">
+        <label for="name">Nama Lengkap:</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+      </div>
+      <div class="form-group">
+        <label for="interest">Apa bidang yang kamu minati?</label>
+        <select id="interest" required>
+          <option value="" disabled selected>Pilih bidang</option>
+          <option value="teknologi">Teknologi dan IT</option>
+          <option value="seni">Seni dan Desain</option>
+          <option value="bisnis">Bisnis dan Ekonomi</option>
+          <option value="kesehatan">Kesehatan dan Medis</option>
+          <option value="sains">Sains dan Penelitian</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="skill">Apa bakat atau keahlianmu?</label>
+        <textarea id="skill" placeholder="Ceritakan bakatmu..." required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="preference">Apa preferensimu saat kuliah?</label>
+        <select id="preference" required>
+          <option value="" disabled selected>Pilih preferensi</option>
+          <option value="teori">Lebih suka teori dan penelitian</option>
+          <option value="praktek">Lebih suka praktek langsung</option>
+          <option value="kombinasi">Kombinasi teori dan praktek</option>
+        </select>
+      </div>
+      <button type="submit">Dapatkan Rekomendasi</button>
+    </form>
+    <div id="result" class="hidden">
+      <h2>Rekomendasi Jurusan dan Universitas</h2>
+      <p id="recommendation"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+  </html>
